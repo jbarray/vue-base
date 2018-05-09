@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        /*设置table样式*/
+        .table{
+            border:1px solid gainsboro;
+            border-collapse:collapse;
+            font-size: 13px;
+        }
+        /*设置单元格样式*/
+        .table td{
+            border:1px solid gainsboro;
+            position: relative;
+            width:300px;
+        }
+        /*设置行内元素*/
+        .inline{
+            display: inline-block;
+        }
+        /*数字前的空格*/
+        .blank{
+            padding-left: 10px;
+        }
+        /*占比外框*/
+        .percent{
+            border:1px solid grey;
+            position: absolute;
+            right:30px;
+            width:100px;
+        }
+        /*占比-绿色部分*/
+        .percent>div{
+            text-align: center;
+            color: white;
+            background-color: green;
+            display: inline-block;
+        }
+        /*设置a的样式*/
+        .table a{
+            color: black;
+            margin-right: 20px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</head>
+<body>
+    <div id="nav">
+        //table内容
+        <table class="table">
+        <tr>
+            <td rowspan="2">
+                <div>字符数:<span class="blank">{{characterNum}}个</span></div>
+                <div>字符种类:<span class="blank">{{characterType}}种</span></div>
+            </td>
+            <td>
+                <div class="inline">中文字符数:<span class="blank">{{chineseCharacterNum}}个</span></div>
+                <div class="inline percent"><div ref="chinesePer">占比{{chineseCharacterPercent}}%</div></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="inline">表情字符数:<span class="blank">{{emoticonCharacterNum}}个</span></div>
+                <div class="inline percent"><div ref="emoticonPer">占比{{emoticonCharacterPercent}}%</div></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <a href="https://www.baidu.com">分词结果</a>
+                    <div class="inline">词语数:<span class="blank">{{wordNum}}个</span></div>
+                </div>
+            </td>
+            <td>
+                <div class="inline">名词数:<span class="blank">{{nounsNum}}个</span></div>
+                <div class="inline percent" ref="nounsPer"><div>占比{{nounsPercent}}%</div></div>
+            </td>
+        </tr>
+    </table>
+    </div>
+
+
+<script type="text/javascript">
+  new Vue({
+      el: '#nav',
+      data: {
+          characterNum:1,
+          characterType:2,
+          chineseCharacterNum:3,
+          chineseCharacterPercent:10,
+          emoticonCharacterNum:4,
+          emoticonCharacterPercent:32,
+          wordNum:5,
+          nounsNum:6,
+          nounsPercent:50
+      },
+      created(){
+          this.chineseCharacterPercent = 53;
+          this.emoticonCharacterPercent = 80;
+          this.nounsPercent = 10;
+      },
+      watch:{
+          //绿色长度是总长度(100px)*百分比
+          chineseCharacterPercent(){
+              if(this.chineseCharacterPercent<55){
+                  return
+              }
+              this.$refs.chinesePer.style.width = `${this.chineseCharacterPercent}px`;
+          },
+          emoticonCharacterPercent(){
+              if(this.emoticonCharacterPercent<55){
+                  return
+              }
+              this.$refs.emoticonPer.style.width = `${this.emoticonCharacterPercent}px`;
+          },
+          nounsPercent(){
+              if(this.nounsPercent<55){
+                  return
+              }
+              this.$refs.nounsPer.style.width = `${this.nounsPercent}px`;
+          }
+      }
+  })
+</script>
+</body>
+</html>
