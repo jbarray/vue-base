@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>table</title>
     <meta charset="utf-8">
     <style type="text/css">
         /*设置table样式*/
@@ -50,6 +50,7 @@
     <div id="nav">
         //table内容
         <table class="table">
+            //第一行
         <tr>
             <td rowspan="2">
                 <div>字符数:<span class="blank">{{characterNum}}个</span></div>
@@ -60,12 +61,14 @@
                 <div class="inline percent"><div ref="chinesePer">占比{{chineseCharacterPercent}}%</div></div>
             </td>
         </tr>
+            //第二行
         <tr>
             <td>
                 <div class="inline">表情字符数:<span class="blank">{{emoticonCharacterNum}}个</span></div>
                 <div class="inline percent"><div ref="emoticonPer">占比{{emoticonCharacterPercent}}%</div></div>
             </td>
         </tr>
+            //第三行
         <tr>
             <td>
                 <div>
