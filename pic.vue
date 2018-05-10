@@ -4,7 +4,7 @@
             <ul id="ul-wrapper" ref="ulWrapper">
                 <li class="picContent" v-for="(item,index) in list" >
                     <a v-bind:href="item.picUrl">
-                        <img  alt="评价图片" v-bind:src="item.picCutUrl">
+                        <img  alt="评价图片" v-bind:src="item.picUrlSmall">
                     </a>
                 </li>
             </ul>
@@ -30,7 +30,7 @@
           list:[
               {
                   picId: 0,
-                  picCutUrl:"https://timgsa.baidu.com/timg?image=&quality=80&size=b9999_10000&sec=1525865680450&di=1e3dfe0f713330d6fcc3492e5b3de604&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F55e736d12f2eb938ef9a4ae1df628535e5dd6f29.jpg",
+                  picUrlSmall:"https://timgsa.baidu.com/timg?image=&quality=80&size=b9999_10000&sec=1525865680450&di=1e3dfe0f713330d6fcc3492e5b3de604&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F55e736d12f2eb938ef9a4ae1df628535e5dd6f29.jpg",
                   picUrl: "http://qcloud.dpfile.com/pc/NW_mCa9a3DwvhJwuOcFDDsEnfwhlzgA_4arKR4VV0hsVKCkHVKn3uRGGPguC_UDNTYGVDmosZWTLal1WbWRW3A.jpg",
                   spuName: "小肥羊",
                   qualityType: 0,
@@ -38,7 +38,7 @@
               },
               {
                   picId: 0,
-                  picCutUrl:"http://qcloud.dpfile.com/pc/9vQetqapeVbe7VfeDwmEWjnv8nDr1H_spa1kvdv9XxgNVOy_o_TfQX-dnd9fN0d0TYGVDmosZWTLal1WbWRW3A.jpg",
+                  picUrlSmall:"http://qcloud.dpfile.com/pc/9vQetqapeVbe7VfeDwmEWjnv8nDr1H_spa1kvdv9XxgNVOy_o_TfQX-dnd9fN0d0TYGVDmosZWTLal1WbWRW3A.jpg",
                   picUrl: "http://qcloud.dpfile.com/pc/G0ZRfz_rXQ38TbTWKsuRftuBXxH4eBpi2uRJr_yYnjwp9jCvUAVqkU2RgnLDsV24TYGVDmosZWTLal1WbWRW3A.jpg",
                   spuName: "小肥羊",
                   qualityType: 0,
@@ -46,7 +46,7 @@
               },
               {
                   picId: 0,
-                  picCutUrl:"http://qcloud.dpfile.com/pc/9vQetqapeVbe7VfeDwmEWjnv8nDr1H_spa1kvdv9XxgNVOy_o_TfQX-dnd9fN0d0TYGVDmosZWTLal1WbWRW3A.jpg",
+                  picUrlSmall:"http://qcloud.dpfile.com/pc/9vQetqapeVbe7VfeDwmEWjnv8nDr1H_spa1kvdv9XxgNVOy_o_TfQX-dnd9fN0d0TYGVDmosZWTLal1WbWRW3A.jpg",
                   picUrl: "http://qcloud.dpfile.com/pc/9vQetqapeVbe7VfeDwmEWjnv8nDr1H_spa1kvdv9XxgNVOy_o_TfQX-dnd9fN0d0TYGVDmosZWTLal1WbWRW3A.jpg",
                   spuName: "小肥羊",
                   qualityType: 0,
@@ -54,7 +54,7 @@
               },
               {
                   picId: 0,
-                  picCutUrl:"https://timgsa.baidu.com/timg?image=&quality=80&size=b9999_10000&sec=1525865680450&di=1e3dfe0f713330d6fcc3492e5b3de604&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F55e736d12f2eb938ef9a4ae1df628535e5dd6f29.jpg",
+                  picUrlSmall:"https://timgsa.baidu.com/timg?image=&quality=80&size=b9999_10000&sec=1525865680450&di=1e3dfe0f713330d6fcc3492e5b3de604&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F55e736d12f2eb938ef9a4ae1df628535e5dd6f29.jpg",
                   picUrl: "http://qcloud.dpfile.com/pc/9vQetqapeVbe7VfeDwmEWjnv8nDr1H_spa1kvdv9XxgNVOy_o_TfQX-dnd9fN0d0TYGVDmosZWTLal1WbWRW3A.jpg",
                   spuName: "小肥羊",
                   qualityType: 0,
@@ -62,7 +62,7 @@
               },
               {
                   picId: 0,
-                  picCutUrl:"http://qcloud.dpfile.com/pc/9vQetqapeVbe7VfeDwmEWjnv8nDr1H_spa1kvdv9XxgNVOy_o_TfQX-dnd9fN0d0TYGVDmosZWTLal1WbWRW3A.jpg",
+                  picUrlSmall:"http://qcloud.dpfile.com/pc/9vQetqapeVbe7VfeDwmEWjnv8nDr1H_spa1kvdv9XxgNVOy_o_TfQX-dnd9fN0d0TYGVDmosZWTLal1WbWRW3A.jpg",
                   picUrl: "http://qcloud.dpfile.com/pc/9vQetqapeVbe7VfeDwmEWjnv8nDr1H_spa1kvdv9XxgNVOy_o_TfQX-dnd9fN0d0TYGVDmosZWTLal1WbWRW3A.jpg",
                   spuName: "小肥羊",
                   qualityType: 0,
@@ -70,7 +70,7 @@
               },
               {
                   picId: 0,
-                  picCutUrl:"http://qcloud.dpfile.com/pc/9vQetqapeVbe7VfeDwmEWjnv8nDr1H_spa1kvdv9XxgNVOy_o_TfQX-dnd9fN0d0TYGVDmosZWTLal1WbWRW3A.jpg",
+                  picUrlSmall:"http://qcloud.dpfile.com/pc/9vQetqapeVbe7VfeDwmEWjnv8nDr1H_spa1kvdv9XxgNVOy_o_TfQX-dnd9fN0d0TYGVDmosZWTLal1WbWRW3A.jpg",
                   picUrl: "http://qcloud.dpfile.com/pc/9vQetqapeVbe7VfeDwmEWjnv8nDr1H_spa1kvdv9XxgNVOy_o_TfQX-dnd9fN0d0TYGVDmosZWTLal1WbWRW3A.jpg",
                   spuName: "小肥羊",
                   qualityType: 0,
@@ -78,7 +78,7 @@
               },
               {
                   picId: 0,
-                  picCutUrl:"https://timgsa.baidu.com/timg?image=&quality=80&size=b9999_10000&sec=1525865680450&di=1e3dfe0f713330d6fcc3492e5b3de604&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F55e736d12f2eb938ef9a4ae1df628535e5dd6f29.jpg",
+                  picUrlSmall:"https://timgsa.baidu.com/timg?image=&quality=80&size=b9999_10000&sec=1525865680450&di=1e3dfe0f713330d6fcc3492e5b3de604&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F55e736d12f2eb938ef9a4ae1df628535e5dd6f29.jpg",
                   picUrl: "http://qcloud.dpfile.com/pc/9vQetqapeVbe7VfeDwmEWjnv8nDr1H_spa1kvdv9XxgNVOy_o_TfQX-dnd9fN0d0TYGVDmosZWTLal1WbWRW3A.jpg",
                   spuName: "小肥羊",
                   qualityType: 0,
@@ -86,7 +86,7 @@
               },
               {
                   picId: 0,
-                  picCutUrl:"http://qcloud.dpfile.com/pc/9vQetqapeVbe7VfeDwmEWjnv8nDr1H_spa1kvdv9XxgNVOy_o_TfQX-dnd9fN0d0TYGVDmosZWTLal1WbWRW3A.jpg",
+                  picUrlSmall:"http://qcloud.dpfile.com/pc/9vQetqapeVbe7VfeDwmEWjnv8nDr1H_spa1kvdv9XxgNVOy_o_TfQX-dnd9fN0d0TYGVDmosZWTLal1WbWRW3A.jpg",
                   picUrl: "http://qcloud.dpfile.com/pc/9vQetqapeVbe7VfeDwmEWjnv8nDr1H_spa1kvdv9XxgNVOy_o_TfQX-dnd9fN0d0TYGVDmosZWTLal1WbWRW3A.jpg",
                   spuName: "小肥羊",
                   qualityType: 0,
@@ -94,7 +94,7 @@
               },
               {
                   picId: 0,
-                  picCutUrl:"http://qcloud.dpfile.com/pc/9vQetqapeVbe7VfeDwmEWjnv8nDr1H_spa1kvdv9XxgNVOy_o_TfQX-dnd9fN0d0TYGVDmosZWTLal1WbWRW3A.jpg",
+                  picUrlSmall:"http://qcloud.dpfile.com/pc/9vQetqapeVbe7VfeDwmEWjnv8nDr1H_spa1kvdv9XxgNVOy_o_TfQX-dnd9fN0d0TYGVDmosZWTLal1WbWRW3A.jpg",
                   picUrl: "http://qcloud.dpfile.com/pc/9vQetqapeVbe7VfeDwmEWjnv8nDr1H_spa1kvdv9XxgNVOy_o_TfQX-dnd9fN0d0TYGVDmosZWTLal1WbWRW3A.jpg",
                   spuName: "小肥羊",
                   qualityType: 0,
