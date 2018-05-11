@@ -106,7 +106,7 @@
           approveCount:0,
           replyCount:0,
           isFrist:true,
-          isLast:false,
+          isLast:false
       },
       watch:{
           //是否为首尾页

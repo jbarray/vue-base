@@ -22,7 +22,7 @@
         display: inline-block;
         padding: 0 5px;
         border: 1px solid gainsboro;
-        margin-right: 1px;
+        /*margin-right: 1px;*/
     }
     /*有效评分样式*/
     .effectiveLevel{
